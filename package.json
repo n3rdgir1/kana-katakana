@@ -1,0 +1,17 @@
+{
+  "name": "rails-react-admin",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:n3rdgir1/rails-react-admin.git",
+  "author": "n3rdgir1 <nerdgirl11235813@gmail.com>",
+  "license": "MIT",
+  "engines": {
+    "node": "8.9.4",
+    "yarn": "1.6.0"
+  },
+  "scripts": {
+    "build": "cd client && yarn install && yarn build",
+    "deploy": "cp -a client/build/. public/",
+    "heroku-postbuild": "yarn build && yarn deploy"
+  }
+}
