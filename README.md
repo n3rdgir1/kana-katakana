@@ -22,3 +22,6 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+
+https://blog.heroku.com/a-rock-solid-modern-web-stack
