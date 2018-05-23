@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
+import Kana from './Kana.js';
 
 class Hiragana extends Component {
   render() {
-    return <h1>Hiragana</h1>
+    return <Kana type='hiragana'/>
   }
 }
 
