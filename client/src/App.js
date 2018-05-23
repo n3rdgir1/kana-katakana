@@ -4,17 +4,20 @@ import Home from './Home';
 import Hiragana from './Hiragana';
 import Katakana from './Katakana';
 import NotFound from './NotFound';
+import './App.css';
 
 class App extends Component {
   render() {
     return (
       <BrowserRouter>
-        <div className="App">
-          <header className="App-header">
-            <h1 className="App-title">Kana Nav</h1>
-            <Link to='/katakana'> Katakana </Link>
-            <Link to='/hiragana'> Hiragana </Link>
-          </header>
+        <div className="main">
+          <nav className="navbar navbar-expand-lg navbar-light bg-light">
+            <a className="navbar-brand" href="/">Kanas</a>
+            <div className="navbar" id="navbarNav">
+              <Link to='/katakana' className="nav-item nav-link"> Katakana </Link>
+              <Link to='/hiragana' className="nav-item nav-link"> Hiragana </Link>
+            </div>
+          </nav>
 
           <Switch>
             <Route exact path='/' component={Home}/>
