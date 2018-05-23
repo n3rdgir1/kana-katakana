@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
+import Kana from './Kana.js';
 
 class Katakana extends Component {
   render() {
-    return <h1>Katakana</h1>
+    return <Kana type='katakana'/>
   }
 }
 
